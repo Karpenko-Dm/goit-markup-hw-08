@@ -1,12 +1,4 @@
-@import "./utils/variables";
-
-@import "./base/components";
-
+@import "./base/common";
 @import "./layout/header";
-@import "./layout/ouer-team";
-@import "./layout/footer";
-@import "./layout/partner";
-@import "./layout/hero";
-@import "./layout/backdrop";
-@import "./layout/work-list";
-@import "./layout/features";
+@import "./utils/variables";
+@import "./base/components";
