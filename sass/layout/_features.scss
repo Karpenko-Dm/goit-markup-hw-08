@@ -1,7 +1,13 @@
-//.features-section {
-  margin-top: 100px;
+.features-section {
+  margin-top: 58px;
 }
-//.title-features {
+.features {
+  padding: 0px;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+.title-features {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -9,26 +15,108 @@
   font-family: Roboto;
   text-transform: uppercase;
 
-  margin-top: 0px;
+  margin-top: 30px;
   margin-bottom: 0px;
+  text-align: center;
 }
-//.text-features {
+.text-features {
   color: var(--title-text-color);
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  padding-top: 10px;
-  margin-bottom: 0px;
-  margin-right: 0px;
+  margin: 0px;
+  padding: 10px 15px 0px 15px;
 }
-//.thumb {
-  margin: 15px;
+.thumb {
+  margin: 0 15px;
   background-color: #f5f4fa;
 }
-//.features-icon {
+.features-icon {
   height: 120px;
-  width: 270px;
-  padding: 25px 100px;
+  width: 450px;
+  padding: 25px 190px;
+}
+.features-item > .thumb:not(:first-child) {
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features-section {
+    margin-top: 60px;
+  }
+
+  .features-list {
+    max-width: 768px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .features-icon {
+    height: 120px;
+    width: 354px;
+    padding: 25px 142px;
+  }
+  .features-item {
+    width: 354px;
+  }
+  .text-features {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-list {
+    display: flex;
+    justify-content: center;
+
+    h2 {
+      margin-top: 0px;
+      margin-right: 0px;
+    }
+
+    h3 {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      font-family: Roboto;
+      text-transform: uppercase;
+
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 15px;
+      text-align: left;
+    }
+    .text-features {
+      padding: 10px 15px 0px 15px;
+    }
+
+    ul .features {
+      padding: 0px;
+      margin-top: 0;
+    }
+    .features-section {
+      margin-top: 94px;
+    }
+
+    .features-list > li:not(:last-child) {
+      margin-right: 30px;
+    }
+    .thumb {
+      margin-bottom: 30px;
+      background-color: #f5f4fa;
+    }
+
+    .features-icon {
+      display: flex;
+      height: 120px;
+      width: 270px;
+      padding: 25px 100px;
+    }
+  }
 }
