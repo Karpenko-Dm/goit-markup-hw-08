@@ -1,0 +1,119 @@
+.partner {
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  h1 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding-bottom: 30px;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .partner-list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 480px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 15px;
+    }
+  }
+}
+.partner-link-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+  width: 210px;
+  height: 90px;
+
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .partner-link-icon {
+    width: 226px;
+    justify-content: center;
+    align-items: center;
+  }
+  .partner-list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 768px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .partner {
+    padding-bottom: 94px;
+    padding-top: 94px;
+
+    h1 {
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.16;
+      letter-spacing: 0.03em;
+      text-align: center;
+      padding-bottom: 50px;
+      margin: 0;
+    }
+  }
+  .partner-list {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    > li:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  .partner-link-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    fill: #afb1b8;
+    width: 170px;
+    height: 90px;
+
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+      border: 1px solid var(--accent-color);
+      border-radius: 4px;
+    }
+  }
+}
