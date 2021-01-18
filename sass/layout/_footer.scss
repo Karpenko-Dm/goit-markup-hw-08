@@ -1,0 +1,191 @@
+.footer-section {
+  background-color: #2f303a;
+}
+.footer-logo {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 24px;
+  height: 1.17;
+  font-family: Raleway, sans-serif;
+
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  span {
+    color: var(--accent-color);
+  }
+}
+.footer-address {
+  padding: 20px 124px 0px 124px;
+  display: inline-block;
+}
+.address {
+  font-style: normal;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.address-contact {
+  padding-top: 9px;
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+}
+
+.action {
+  padding: 60px 137px;
+  display: inline-block;
+
+  p {
+    display: flex;
+
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-align: left;
+    text-transform: uppercase;
+  }
+}
+
+.footer-form-field {
+  min-width: 450px;
+
+  form {
+    display: block;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: left;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+.subscribe-button {
+  display: flex;
+  min-width: 200px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  margin: 20px 140px 60px;
+  padding-left: 28px;
+  color: #ffffff;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.send-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.send-icon {
+  margin: 10px;
+}
+.footer-form-input {
+  display: flex;
+  min-width: 450px;
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  background: #2f303a;
+  margin: 0 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+
+  border-radius: 4px;
+}
+
+input[type="email"]:focus {
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-section .container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    min-width: 850px;
+  }
+
+  .footer-logo {
+    display: block;
+    padding-left: 115px;
+  }
+  .footer-address {
+    width: 232px;
+    display: block;
+    padding: 20px 0px 8px 0px;
+    margin-left: 76px;
+  }
+  .action {
+    display: block;
+    padding: 60px 89px 60px 165px;
+  }
+  .footer-form-field {
+    display: block;
+    padding-left: 166px;
+    padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-section .container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .footer-inf {
+    display: block;
+    padding-left: 15px;
+  }
+  .footer-logo {
+    padding-top: 72px;
+    padding-left: 0px;
+  }
+  .action {
+    padding: 72px 93px 100px 70px;
+  }
+  .footer-address {
+    padding-left: 0px;
+    margin: 0;
+  }
+  .footer-form-field {
+    display: inline-block;
+    padding: 72px 0px 0px 0px;
+  }
+  .footer-form-input {
+    min-width: 358px;
+    height: 50px;
+    margin: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+
+    border-radius: 4px;
+  }
+  .send-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

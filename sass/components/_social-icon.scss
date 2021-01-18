@@ -25,3 +25,36 @@
   width: 20px;
   height: 20px;
 }
+//****************** footer-socisl-icon  *************
+
+.footer-social-list {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 20px 0px 0px 0px;
+
+  > li:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.footer-link-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: #ffffff;
+  }
+}
