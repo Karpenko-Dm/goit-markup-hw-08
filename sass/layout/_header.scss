@@ -1,7 +1,14 @@
 .header .container {
   border: none;
   background-color: #ffffff;
-  border: 1px solid red;
+}
+.header {
+  position: relative;
+}
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .link-icon {
@@ -9,7 +16,7 @@
   fill: currentColor;
 }
 .logo {
-  display: block;
+  display: flex;
   text-decoration: none;
   color: #000000;
   font-size: 26px;
@@ -25,6 +32,7 @@
     color: var(--accent-color);
   }
 }
+
 .menu-nav {
   display: none;
 }
@@ -32,14 +40,85 @@
   display: none;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .button-nav {
+    display: inline-flex;
+    margin-right: 10px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+  .button-nav .icon-menu {
+    display: none;
+  }
+  .button-nav.is-open .icon-menu {
+    display: block;
+  }
+  .button-nav.is-open .icon-close {
+    display: none;
+  }
+  .menu-contant-up {
+    display: block;
+  }
+
+  .link {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+
+    margin-top: 32px;
+    padding-bottom: 32px;
+
+    position: relative;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  .contact-item {
+    text-decoration: none;
+    color: var(--title-text-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  .menu-contant {
+    display: none;
+    height: 453px;
+
+    position: absolute;
+    top: 62px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
+    &.is-open {
+      display: block;
+    }
+  }
+}
 @media screen and (min-width: 768px) {
   .header .container {
     display: flex;
   }
 
-  .nav-contacs {
-    padding: 0px;
-    margin: 0px;
+  .pop-up-menu {
+    display: none;
   }
   .site-nav {
     display: flex;
