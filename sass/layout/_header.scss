@@ -134,7 +134,6 @@
   .contant-up-addres {
     margin-top: 10px;
   }
-
   .link.current::after {
     content: "";
     display: block;
@@ -151,6 +150,10 @@
 @media screen and (min-width: 768px) {
   .header .container {
     display: flex;
+  }
+  .link.current::after {
+    content: "";
+    bottom: 0;
   }
 
   .pop-up-menu {
