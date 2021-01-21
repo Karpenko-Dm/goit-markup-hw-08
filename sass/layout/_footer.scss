@@ -164,9 +164,11 @@ input[type="email"]:focus {
 
 @media screen and (min-width: 1200px) {
   .footer-section .container {
+    width: 1200px;
     display: flex;
     flex-wrap: nowrap;
   }
+
   .footer-inf {
     display: block;
     padding-left: 15px;
