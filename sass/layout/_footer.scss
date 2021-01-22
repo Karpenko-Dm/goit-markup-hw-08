@@ -131,7 +131,7 @@ input[type="email"]:focus {
   .footer-section .container {
     display: inline-flex;
     flex-wrap: wrap;
-    min-width: 850px;
+    min-width: 768px;
   }
   .footer-section {
     padding-bottom: 60px;
@@ -178,7 +178,10 @@ input[type="email"]:focus {
     padding-left: 0px;
   }
   .action {
-    padding: 72px 93px 100px 70px;
+    padding: 72px 93px 0px 70px;
+    p {
+      justify-content: left;
+    }
   }
   .footer-address {
     padding-left: 0px;
